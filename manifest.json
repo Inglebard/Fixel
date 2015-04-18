@@ -9,7 +9,7 @@
             "desktop": "Fixel.desktop"
         }
     },
-    "version": "0.1",
+    "version": "0.3",
     "maintainer": "David 'Inglebard' RICQ <davidricq87@orange.fr>",
     "framework": "ubuntu-sdk-14.04-qml"
 }

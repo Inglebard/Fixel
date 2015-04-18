@@ -117,7 +117,7 @@ Window {
                 }
             }
             Page {
-                title: i18n.tr("")
+                title: ""
                 id: fixerPage
                 visible: false
 
@@ -167,7 +167,7 @@ Window {
             }
 
             Page {
-                title: i18n.tr("")
+                title: ""
                 id: checkerPage
                 visible: false
 

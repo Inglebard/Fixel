@@ -1,5 +1,5 @@
 {
-    "name": "fixel.inglebard",
+    "name": "fixelapp.inglebard",
     "description": "Fixel is a simple Ubuntu phone QML app which try to repair stuck pixel",
     "architecture": "all",
     "title": "Fixel",

@@ -9,7 +9,7 @@ Window {
     MainView {
         objectName: "mainView"
         id: mainView
-        applicationName: "fixel.inglebard"
+        applicationName: "fixelapp.inglebard"
         automaticOrientation: true
         useDeprecatedToolbar: false
         anchors.fill: parent
@@ -53,7 +53,7 @@ Window {
                         text: i18n.tr("Check")
                         color:"#DD4814"
                         anchors.top:gofixerbutton.bottom
-                        anchors.topMargin: units.gu(2)
+                        anchors.topMargin: units.gu(4)
                         onClicked: {
                             pageStack.push(checkerPage)
                             mainWindow.visibility=Window.FullScreen

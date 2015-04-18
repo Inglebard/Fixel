@@ -9,7 +9,7 @@ Window {
     MainView {
         objectName: "mainView"
         id: mainView
-        applicationName: "Fixel.inglebard"
+        applicationName: "fixel.inglebard"
         automaticOrientation: true
         useDeprecatedToolbar: false
         anchors.fill: parent
@@ -21,26 +21,20 @@ Window {
                 id: mainpage
                 title: i18n.tr("Fixel")
                 visible: false
-                Column {
-                    spacing: units.gu(1)
+                Rectangle {
+                    id: mainRect
                     anchors.margins: units.gu(2)
                     anchors.fill: parent
-
-                    Label {
-                        id: desc
-                        objectName: "label"
-                        width: parent.width
-                        text: i18n.tr("Fixel is a QML app which try to fix stuck pixels")
-                        verticalAlignment: Text.AlignVCenter
-                        horizontalAlignment: Text.AlignHCenter
-                    }
-
+                    color: "transparent"
 
                     Button {
                         id: gofixerbutton
                         objectName: "button"
                         width: parent.width
                         text: i18n.tr("Start")
+                        color:"#DD4814"
+                        anchors.top:parent.top
+                        anchors.topMargin: units.gu(2)
                         onClicked: {
                             if(!fixertimer.running)
                             {
@@ -57,12 +51,69 @@ Window {
                         objectName: "button"
                         width: parent.width
                         text: i18n.tr("Check")
+                        color:"#DD4814"
+                        anchors.top:gofixerbutton.bottom
+                        anchors.topMargin: units.gu(2)
                         onClicked: {
                             pageStack.push(checkerPage)
                             mainWindow.visibility=Window.FullScreen
                         }
                     }
 
+
+
+                    Rectangle {
+                        id: rectInfo
+                        width:parent.width
+                        height: units.gu(5)
+                        anchors.bottomMargin: units.gu(2)
+                        anchors.bottom: rectWarn.top
+                        color: "#D9EDF7"
+                        border.color: "#bce8f1"
+                        border.width: 5
+                        radius: 10
+
+
+                        Label
+                        {
+                            id: info
+                            objectName: "note"
+                            width: parent.width
+                            anchors.margins: units.gu(2)
+                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            text: i18n.tr("<html><b>Note : </b>Disable screensaver before start the process.</html>")
+                            color: "#31708f"
+                            wrapMode: TextEdit.WordWrap
+                            verticalAlignment: Text.AlignVCenter
+                            horizontalAlignment: Text.AlignHCenter
+                        }
+                    }
+                    Rectangle {
+                        id: rectWarn
+                        width:parent.width
+                        height: units.gu(5)
+                        anchors.topMargin: units.gu(2)
+                        anchors.bottom: parent.bottom
+                        color: "#FCF8E3"
+                        border.color: "#faebcc"
+                        border.width: 5
+                        radius: 10
+
+                        Label {
+                            id: warn
+                            objectName: "warn"
+                            width: parent.width
+                            anchors.margins: units.gu(2)
+                            anchors.fill: parent
+                            anchors.centerIn: parent
+                            text: i18n.tr("<html><b>Warning : </b>Do not look at the screen during the process.</html>")
+                            color: "#8a6d3b"
+                            wrapMode: TextEdit.WordWrap
+                            verticalAlignment: Text.AlignVCenter
+                            horizontalAlignment: Text.AlignHCenter
+                        }
+                    }
                 }
             }
             Page {

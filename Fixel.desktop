@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Fixel
+Exec=qmlscene $@ Main.qml
+Icon=Fixel.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+

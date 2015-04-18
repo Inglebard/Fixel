@@ -1,0 +1,15 @@
+{
+    "name": "fixel.inglebard",
+    "description": "description of Fixel",
+    "architecture": "all",
+    "title": "Fixel",
+    "hooks": {
+        "Fixel": {
+            "apparmor": "Fixel.apparmor",
+            "desktop": "Fixel.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "David 'Inglebard' RICQ <davidricq87@orange.fr>",
+    "framework": "ubuntu-sdk-14.04-qml"
+}

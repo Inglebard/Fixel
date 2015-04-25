@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Fixel 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-25 14:41+0200\n"
+"PO-Revision-Date: 2015-04-25 14:45+0100\n"
+"Last-Translator: David 'Inglebard' RICQ <davidricq87@orange.fr>\n"
+"Language-Team: Inglebard <davidricq87@orange.fr>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: AboutPage.qml:6
+msgid "About Fixel"
+msgstr "About Fixel"
+
+#: AboutPage.qml:50
+msgid "Repair your stuck pixels"
+msgstr "Repair your stuck pixels"
+
+#: AboutPage.qml:60
+msgid "Website and support: "
+msgstr "Website and support: "
+
+#: AboutPage.qml:70
+msgid "License: "
+msgstr "License: "
+
+#: MainPage.qml:12
+msgid "Fixel"
+msgstr "Fixel"
+
+#: MainPage.qml:25
+msgid "Info"
+msgstr "Info"
+
+#: MainPage.qml:42
+msgid "Start"
+msgstr "Start"
+
+#: MainPage.qml:52
+msgid "Check"
+msgstr "Check"
+
+#: MainPage.qml:84
+msgid ""
+"<html><b>Note : </b>Disable screensaver before start the process.</html>"
+msgstr ""
+"<html><b>Note : </b>Disable screensaver before start the process.</html>"
+
+#: MainPage.qml:109
+msgid ""
+"<html><b>Warning : </b>Do not look at the screen during the process.</html>"
+msgstr ""
+"<html><b>Warning : </b>Do not look at the screen during the process.</html>"

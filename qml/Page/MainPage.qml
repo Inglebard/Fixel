@@ -13,13 +13,14 @@ PageStack {
         visible: false
 
         head.actions: [
-                        /*Action {
+                        Action {
                             iconName: "settings"
                             text: i18n.tr("Settings")
                             onTriggered: {
+                                settingPage.initSetting();
                                 mainPage_PageStack.push(settingPage)
                             }
-                        },*/
+                        },
                        Action {
                            iconName: "info"
                            text: i18n.tr("Info")
@@ -38,22 +39,31 @@ PageStack {
             Button {
                 id: goFixerButton
                 objectName: "button"
-                width: parent.width
+                anchors.left: parent.left
+                anchors.right: parent.right
                 text: i18n.tr("Start")
                 color:"#DD4814"
                 anchors.top:parent.top
                 anchors.topMargin: units.gu(2)
+                onClicked: {
+                    fixerPage.initFixer();
+                    fixerPage.startFixer();
+                    main_PageStack.push(fixerPage)
+                    mainWindow.visibility=Window.FullScreen
+                }
             }
 
             Button {
                 id: goCheckButton
                 objectName: "button"
-                width: parent.width
+                anchors.left: parent.left
+                anchors.right: parent.right
                 text: i18n.tr("Check")
                 color:"#DD4814"
                 anchors.top:goFixerButton.bottom
                 anchors.topMargin: units.gu(4)
                 onClicked: {
+                    checkerPage.initChecker();
                     main_PageStack.push(checkerPage)
                     mainWindow.visibility=Window.FullScreen
                 }
@@ -63,8 +73,9 @@ PageStack {
 
             Rectangle {
                 id: rectInfo
-                width:parent.width
                 height: info.paintedHeight + units.gu(1)
+                anchors.left: parent.left
+                anchors.right: parent.right
                 anchors.bottomMargin: units.gu(2)
                 anchors.bottom: rectWarn.top
                 color: "#D9EDF7"
@@ -77,7 +88,6 @@ PageStack {
                 {
                     id: info
                     objectName: "note"
-                    width: parent.width
                     anchors.margins: units.gu(2)
                     anchors.fill: parent
                     anchors.centerIn: parent
@@ -90,8 +100,9 @@ PageStack {
             }
             Rectangle {
                 id: rectWarn
-                width:parent.width
                 height: info.paintedHeight + units.gu(1)
+                anchors.left: parent.left
+                anchors.right: parent.right
                 anchors.topMargin: units.gu(2)
                 anchors.bottom: parent.bottom
                 color: "#FCF8E3"
@@ -102,7 +113,6 @@ PageStack {
                 Label {
                     id: warn
                     objectName: "warn"
-                    width: parent.width
                     anchors.margins: units.gu(2)
                     anchors.fill: parent
                     anchors.centerIn: parent
@@ -118,6 +128,10 @@ PageStack {
 
     AboutPage {
         id: aboutPage
+        visible: false
+    }
+    SettingPage {
+        id: settingPage
         visible: false
     }
 }

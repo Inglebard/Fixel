@@ -11,7 +11,8 @@ Page {
         anchors.topMargin: units.gu(4)
         Item {
             id: icon
-            width: parent.width
+            anchors.left: parent.left
+            anchors.right: parent.right
             height: appIcon.height + units.gu(1)
 
             UbuntuShape {
@@ -22,14 +23,15 @@ Page {
                 anchors.centerIn: parent
 
                 image: Image {
-                    source: "Fixel.svg"
+                    source: Qt.resolvedUrl("../../img/Fixel.svg")
                 }
             }
         }
         Item {
             id: description
 
-            width: parent.width
+            anchors.left: parent.left
+            anchors.right: parent.right
             height: name.height + description_text.height + units.gu(4)
             Column {
                 anchors.fill: parent
@@ -37,7 +39,7 @@ Page {
                 Label {
                     id: name
 
-                    text: "Fixel v1.0"
+                    text: "Fixel v" + mainWindow.version
                     anchors.horizontalCenter: parent.horizontalCenter
                     fontSize: "x-large"
                     horizontalAlignment:  Text.AlignHCenter
@@ -47,7 +49,7 @@ Page {
                     id: description_text
 
                     width: parent.width - units.gu(2)
-                    text: i18n.tr("Repair your stuck pixels")
+                    text: i18n.tr("Repair your stuck pixels !!")
                     anchors.horizontalCenter: parent.horizontalCenter
                     wrapMode: Text.WordWrap
                     horizontalAlignment:  Text.AlignHCenter

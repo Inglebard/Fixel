@@ -45,8 +45,6 @@ Page {
         property int msMax: 0
 
         onTriggered: {
-            console.log(msElapsed);
-            console.log(msMax);
             msElapsed+=fixerTimer.interval;
 
             fixerRectangle.color=colorDurationArray[colorToDisplay].color;

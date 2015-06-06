@@ -210,7 +210,7 @@ Page {
                                 makeMeVisible(duraFixerVal)
                             }
                         }
-                        validator: RegExpValidator { regExp: /^[0-9]{1,6}$/ }
+                        validator: RegExpValidator { regExp: /^[0-9]*$/ }
                         placeholderText: i18n.tr("ex: 100(ms)")
                     }
                 }

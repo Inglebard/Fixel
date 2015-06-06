@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-04 21:51+0200\n"
+"POT-Creation-Date: 2015-06-04 22:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: qml/Components/AccordionColorDuration.qml:10
-msgid "Color"
+msgid "Color: "
 msgstr ""
 
-#: qml/Components/AccordionColorDuration.qml:11
-msgid "Color value"
+#: qml/Components/AccordionColorDuration.qml:13
+msgid "Duration: "
+msgstr ""
+
+#: qml/Components/AccordionColorDuration.qml:16
+msgid "ms"
+msgstr ""
+
+#: qml/Components/AccordionColorDuration.qml:18
+msgid "Color screen"
 msgstr ""
 
 #: qml/Components/ColorDuration.qml:29

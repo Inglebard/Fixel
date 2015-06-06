@@ -7,8 +7,15 @@ Accordion {
         left: parent.left
         right: parent.right
     }
-    description:  i18n.tr("Color")
-    text:  i18n.tr("Color value")
+    description:  i18n.tr("Color: ")
+                  + contentsItem.colorValue
+                  + ", "
+                  + i18n.tr("Duration: ")
+                  + contentsItem.durationValue
+                  + " "
+                  +i18n.tr("ms")
+
+    text:  i18n.tr("Color screen")
     contents: ColorDuration {
     }
 }

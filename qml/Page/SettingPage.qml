@@ -108,7 +108,7 @@ Page {
 
                     Label {
                         id: colorChecker
-                        text: i18n.tr("Checker Color:")
+                        text: i18n.tr("Color:")
                         width: parent.width/2
                         anchors.verticalCenter: parent.verticalCenter
                     }
@@ -197,7 +197,7 @@ Page {
                     Label {
                         id: duraFixer
                         width: parent.width/2
-                        text: i18n.tr("Fixer duration:")
+                        text: i18n.tr("Duration:")
                         anchors.verticalCenter: parent.verticalCenter
                     }
 

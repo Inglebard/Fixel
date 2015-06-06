@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fixel 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-04 22:37+0200\n"
-"PO-Revision-Date: 2015-06-04 22:38+0100\n"
+"POT-Creation-Date: 2015-06-06 15:17+0200\n"
+"PO-Revision-Date: 2015-06-06 15:19+0100\n"
 "Last-Translator: David 'Inglebard' RICQ <davidricq87@orange.fr>\n"
 "Language-Team: Inglebard <davidricq87@orange.fr>\n"
 "Language: en\n"
@@ -33,7 +33,7 @@ msgstr "ms"
 msgid "Color screen"
 msgstr "Color screen"
 
-#: qml/Components/ColorDuration.qml:29
+#: qml/Components/ColorDuration.qml:29 qml/Page/SettingPage.qml:111
 msgid "Color:"
 msgstr "Color:"
 
@@ -41,7 +41,7 @@ msgstr "Color:"
 msgid "ex: #AA00BB"
 msgstr "ex: #AA00BB"
 
-#: qml/Components/ColorDuration.qml:58
+#: qml/Components/ColorDuration.qml:58 qml/Page/SettingPage.qml:200
 msgid "Duration:"
 msgstr "Duration:"
 
@@ -61,17 +61,9 @@ msgstr "Settings"
 msgid "Checker screen"
 msgstr "Checker screen"
 
-#: qml/Page/SettingPage.qml:111
-msgid "Checker Color:"
-msgstr "Checker Color:"
-
 #: qml/Page/SettingPage.qml:176
 msgid "Fixer screen"
 msgstr "Fixer screen"
-
-#: qml/Page/SettingPage.qml:200
-msgid "Fixer duration:"
-msgstr "Fixer duration:"
 
 #: qml/Page/SettingPage.qml:224
 msgid "Fixer colors"
@@ -128,6 +120,12 @@ msgid ""
 "<html><b>Warning : </b>Do not look at the screen during the process.</html>"
 msgstr ""
 "<html><b>Warning : </b>Do not look at the screen during the process.</html>"
+
+#~ msgid "Checker Color:"
+#~ msgstr "Checker Color:"
+
+#~ msgid "Fixer duration:"
+#~ msgstr "Fixer duration:"
 
 #~ msgid "Color"
 #~ msgstr "Color"

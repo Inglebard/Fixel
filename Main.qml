@@ -8,7 +8,7 @@ import "js/MainController.js" as MainController
 Window {
     id: mainWindow
     visible: true
-    property string version: "1.0"
+    property string version: "1.1"
 
     Component.onCompleted: {
         MainController.MainController.checkData(version);

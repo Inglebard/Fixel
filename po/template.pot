@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-04 22:44+0200\n"
+"POT-Creation-Date: 2015-06-06 15:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Color screen"
 msgstr ""
 
-#: qml/Components/ColorDuration.qml:29
+#: qml/Components/ColorDuration.qml:29 qml/Page/SettingPage.qml:111
 msgid "Color:"
 msgstr ""
 
@@ -41,7 +41,7 @@ msgstr ""
 msgid "ex: #AA00BB"
 msgstr ""
 
-#: qml/Components/ColorDuration.qml:58
+#: qml/Components/ColorDuration.qml:58 qml/Page/SettingPage.qml:200
 msgid "Duration:"
 msgstr ""
 
@@ -61,16 +61,8 @@ msgstr ""
 msgid "Checker screen"
 msgstr ""
 
-#: qml/Page/SettingPage.qml:111
-msgid "Checker Color:"
-msgstr ""
-
 #: qml/Page/SettingPage.qml:176
 msgid "Fixer screen"
-msgstr ""
-
-#: qml/Page/SettingPage.qml:200
-msgid "Fixer duration:"
 msgstr ""
 
 #: qml/Page/SettingPage.qml:224

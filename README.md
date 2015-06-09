@@ -1,2 +1,2 @@
 # Fixel
-Fixel is a simple Ubuntu phone QML app which try to repair stuck pixels.
+Fixel is a simple Ubuntu phone QML app which tries to repair stuck pixels.
